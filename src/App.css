@@ -16,23 +16,3 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  width: 4rem;
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.nav-items {
-  display: flex;
-  gap: 1rem;
-}
