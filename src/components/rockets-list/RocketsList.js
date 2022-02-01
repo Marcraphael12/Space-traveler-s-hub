@@ -4,7 +4,9 @@ import { fetchRocketsAsync } from '../../redux/rockets/thunk';
 import './rockets-list.scss';
 
 const RocketsList = () => {
-  const rockets = useSelector((state) => state.rocketsReducer.rockets);
+  const rockets = useSelector((state) =>
+    state.rocketsReducer.rockets.filter((rocket) => rocket.reserved)
+  );
   const dispatch = useDispatch();
 
   useEffect(
