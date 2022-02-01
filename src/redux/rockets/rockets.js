@@ -28,6 +28,11 @@ export const reserveRocket = (payload) => ({
   payload,
 });
 
+export const cancelReservation = (payload) => ({
+  type: CANCEL_RESERVATION,
+  payload,
+});
+
 const reducer = (state = intitalState, action) => {
   switch (action.type) {
     case FETCH_ROCKETS:
