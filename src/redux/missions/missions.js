@@ -19,6 +19,25 @@ export const reducer = (state = initialState, action) => {
       return {
         missions: action.payload,
       };
+    case 'JOIN_MISSION': {
+      const newState = state.missions.map((mission) => {
+        if (mission.mission_id === action.payload) {
+          return { ...mission, joined: true };
+        }
+        return mission;
+      });
+      return { missions: newState };
+    }
+    case 'LEAVE_MISSION': {
+      const newState = state.missions.map((mission) => {
+        if (mission.mission_id === action.payload) {
+          return { ...mission, joined: false };
+        }
+        return mission;
+      });
+      return { missions: newState };
+    }
+
     default:
       return state;
   }
