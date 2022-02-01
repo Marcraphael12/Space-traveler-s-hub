@@ -10,7 +10,7 @@ const Rockets = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchRocketsAsync());
+    !rockets.length && dispatch(fetchRocketsAsync());
   }, [dispatch]);
 
   return (
