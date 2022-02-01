@@ -1,0 +1,24 @@
+@use '../../styles/colors';
+
+.primary-button {
+  padding: 1em 1.25em;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color: colors.$color-blue;
+  color: #fff;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: darken($color: colors.$color-blue, $amount: 5%);
+  }
+
+  &--unactive {
+    background-color: #fff;
+    border: 1px solid colors.$color-gray;
+    color: colors.$color-gray;
+
+    &:hover {
+      background-color: lighten($color: colors.$color-gray, $amount: 50%);
+    }
+  }
+}
