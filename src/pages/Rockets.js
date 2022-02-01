@@ -4,6 +4,7 @@ import { fetchRocketsAsync } from '../redux/rockets/thunk';
 
 const Rockets = () => {
   const rockets = useSelector((state) => state.rocketsReducer.rockets);
+  const isLoading = useSelector((state) => state.rocketsReducer.isLoading);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -14,9 +15,11 @@ const Rockets = () => {
     <div>
       <h1>Rockets:</h1>
       <ul>
-        {rockets.map((rocket) => (
-          <li key={rocket.id}>{rocket.rocket_name}</li>
-        ))}
+        {isLoading ? (
+          <li>Loading...</li>
+        ) : (
+          rockets.map((rocket) => <li key={rocket.id}>{rocket.rocket_name}</li>)
+        )}
       </ul>
     </div>
   );

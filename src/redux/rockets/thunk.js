@@ -5,7 +5,7 @@ import {
 } from './rockets';
 
 export const fetchRocketsAsync = () => async (dispatch) => {
-  dispatch(fetchRockets);
+  dispatch(fetchRockets());
 
   try {
     const res = await fetch('https://api.spacexdata.com/v3/rockets');
