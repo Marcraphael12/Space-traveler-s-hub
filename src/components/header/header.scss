@@ -26,7 +26,14 @@ $color-blue-dark: darken(colors.$color-blue, 10%);
 
   &__nav-items {
     display: flex;
-    gap: 1rem;
+  }
+
+  &__nav-item {
+    padding: 0 1rem;
+
+    &--br {
+      border-right: 1px solid #000;
+    }
   }
 
   &__nav-link {

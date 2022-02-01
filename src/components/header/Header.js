@@ -15,9 +15,14 @@ const Header = () => (
             Rockets
           </NavLink>
         </li>
-        <li className="header__nav-item">
+        <li className="header__nav-item header__nav-item--br">
           <NavLink className="header__nav-link" to="missions">
             Missions
+          </NavLink>
+        </li>
+        <li className="header__nav-item">
+          <NavLink className="header__nav-link" to="my-profile">
+            My Profile
           </NavLink>
         </li>
       </ul>
