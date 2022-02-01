@@ -3,6 +3,16 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux'
 import { missionFromApi } from '../../redux/missions/missions';
 
+const joinMission = (payload) => ({
+  type: 'JOIN_MISSION',
+  payload,
+});
+
+const leaveMission = (payload) => ({
+  type: 'LEAVE_MISSION',
+  payload,
+});
+
 const Missions = () => {
   const dispatch = useDispatch();
   const data = useSelector((state) => state.missionsReducer.missions);
@@ -11,6 +21,21 @@ const Missions = () => {
   useEffect(() => {
     dispatch(missionFromApi());
   }, []);
+
+  const btnClass = (joined) => {
+    let classes = 'btn btn-block btn-outline-';
+    classes += joined ? 'danger' : 'dark';
+    return classes;
+  };
+
+  const handleMission = (e) => {
+    if (e.target.textContent === 'Leave mission') {
+      dispatch(leaveMission(e.target.id));
+    } else {
+      dispatch(joinMission(e.target.id));
+    }
+  };
+
   return (
     <div className="container">
       <table className="table table-bordered table-striped">
@@ -24,15 +49,25 @@ const Missions = () => {
         </thead>
         <tbody>
           {missions.map((mission) => {
+            const btn = btnClass(mission.joined);
+            let memberStatus;
+            let memberAction;
+            if (mission.joined) {
+              memberAction = 'Leave mission';
+              memberStatus = 'Active member';
+            } else {
+              memberAction = 'Join mission';
+              memberStatus = 'NOT A MEMBER';
+            }
             return (
               <tr key={mission.mission_id} className="pb-5">
                 <td>{mission.mission_name}</td>
                 <td>{mission.description}</td>
                 <td>
-                  <span>memberStatus</span>
+                  <span>{memberStatus}</span>
                 </td>
                 <td>
-                  <button id={mission.mission_id} type="button" >memberAction</button>
+                  <button id={mission.mission_id} type="button" className={btn} onClick={handleMission}>{memberAction}</button>
                 </td>
               </tr>
             );
