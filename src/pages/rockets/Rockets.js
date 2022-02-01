@@ -9,9 +9,10 @@ const Rockets = () => {
   const isLoading = useSelector((state) => state.rocketsReducer.isLoading);
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    !rockets.length && dispatch(fetchRocketsAsync());
-  }, [dispatch]);
+  useEffect(
+    () => !rockets.length && dispatch(fetchRocketsAsync()),
+    [dispatch, rockets.length]
+  );
 
   return (
     <section className="rockets container">
