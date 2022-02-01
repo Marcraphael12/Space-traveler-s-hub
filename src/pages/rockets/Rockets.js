@@ -11,7 +11,7 @@ const Rockets = () => {
 
   useEffect(() => {
     dispatch(fetchRocketsAsync());
-  }, []);
+  }, [dispatch]);
 
   return (
     <section className="rockets container">
