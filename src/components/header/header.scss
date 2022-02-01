@@ -1,5 +1,7 @@
 @use '../../styles/colors';
 
+$color-blue-dark: darken(colors.$color-blue, 10%);
+
 .header {
   display: flex;
   align-items: center;
@@ -21,9 +23,22 @@
     font-size: 2rem;
     font-weight: 500;
   }
-}
 
-.nav-items {
-  display: flex;
-  gap: 1rem;
+  &__nav-items {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__nav-link {
+    color: colors.$color-blue;
+
+    &:hover {
+      color: $color-blue-dark;
+    }
+
+    &.active {
+      text-decoration: underline;
+      color: $color-blue-dark;
+    }
+  }
 }

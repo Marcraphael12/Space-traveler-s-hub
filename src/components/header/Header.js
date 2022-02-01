@@ -9,12 +9,16 @@ const Header = () => (
       <span className="header__logo-title">Space Travelers' Hub</span>
     </div>
     <nav>
-      <ul className="nav-items">
-        <li>
-          <NavLink to="/">Rockets</NavLink>
+      <ul className="header__nav-items">
+        <li className="header__nav-item">
+          <NavLink className="header__nav-link" to="/">
+            Rockets
+          </NavLink>
         </li>
-        <li>
-          <NavLink to="missions">Missions</NavLink>
+        <li className="header__nav-item">
+          <NavLink className="header__nav-link" to="missions">
+            Missions
+          </NavLink>
         </li>
       </ul>
     </nav>
