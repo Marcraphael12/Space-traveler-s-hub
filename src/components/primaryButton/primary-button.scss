@@ -7,6 +7,7 @@
   background-color: colors.$color-blue;
   color: #fff;
   transition: background-color 0.2s ease;
+  font-size: 1rem;
 
   &:hover {
     background-color: darken($color: colors.$color-blue, $amount: 5%);
