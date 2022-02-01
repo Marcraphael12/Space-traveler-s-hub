@@ -11,9 +11,7 @@ const Rocket = ({ rocket }) => {
       />
       <h2 className="rocket__name">{rocket.rocket_name}</h2>
       <p className="rocket__description">{rocket.description}</p>
-      <PrimaryButton unactive type="button">
-        Reserve Rocket
-      </PrimaryButton>
+      <PrimaryButton type="button">Reserve Rocket</PrimaryButton>
     </li>
   );
 };
