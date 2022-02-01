@@ -2,16 +2,8 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux'
 import { missionFromApi } from '../../redux/missions/missions';
-
-const joinMission = (payload) => ({
-  type: 'JOIN_MISSION',
-  payload,
-});
-
-const leaveMission = (payload) => ({
-  type: 'LEAVE_MISSION',
-  payload,
-});
+import { buttonClass, badgeClass, joinMission, leaveMission } from './events';
+import './missions.scss';
 
 const Missions = () => {
   const dispatch = useDispatch();
@@ -22,12 +14,6 @@ const Missions = () => {
     dispatch(missionFromApi());
   }, []);
 
-  const btnClass = (joined) => {
-    let classes = 'btn btn-block btn-outline-';
-    classes += joined ? 'danger' : 'dark';
-    return classes;
-  };
-
   const handleMission = (e) => {
     if (e.target.textContent === 'Leave mission') {
       dispatch(leaveMission(e.target.id));
@@ -35,7 +21,6 @@ const Missions = () => {
       dispatch(joinMission(e.target.id));
     }
   };
-
   return (
     <div className="container">
       <table className="table table-bordered table-striped">
@@ -49,7 +34,8 @@ const Missions = () => {
         </thead>
         <tbody>
           {missions.map((mission) => {
-            const btn = btnClass(mission.joined);
+            const button = buttonClass(mission.joined);
+            const badge = badgeClass(mission.joined);
             let memberStatus;
             let memberAction;
             if (mission.joined) {
@@ -62,12 +48,12 @@ const Missions = () => {
             return (
               <tr key={mission.mission_id} className="pb-5">
                 <td>{mission.mission_name}</td>
-                <td>{mission.description}</td>
+                <td className="pb-4">{mission.description}</td>
                 <td>
-                  <span>{memberStatus}</span>
+                  <span className={badge}>{memberStatus}</span>
                 </td>
                 <td>
-                  <button id={mission.mission_id} type="button" className={btn} onClick={handleMission}>{memberAction}</button>
+                  <button id={mission.mission_id} type="button" style={{ padding: '10px' }} className={button} onClick={handleMission}>{memberAction}</button>
                 </td>
               </tr>
             );
