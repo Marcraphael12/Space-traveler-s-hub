@@ -1,5 +1,25 @@
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchRocketsAsync } from '../redux/rockets/thunk';
+
 const Rockets = () => {
-  return <div>Rockets page</div>;
+  const rockets = useSelector((state) => state.rocketsReducer.rockets);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchRocketsAsync());
+  }, []);
+
+  return (
+    <div>
+      <h1>Rockets:</h1>
+      <ul>
+        {rockets.map((rocket) => (
+          <li key={rocket.id}>{rocket.rocket_name}</li>
+        ))}
+      </ul>
+    </div>
+  );
 };
 
 export default Rockets;
