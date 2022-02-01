@@ -19,7 +19,10 @@ const Rocket = ({
         alt={`Rocket ${rocket_name}`}
       />
       <h2 className="rocket__name">{rocket_name}</h2>
-      <p className="rocket__description">{description}</p>
+      <p className="rocket__description">
+        {reserved && <span className="rocket__badge">reserved</span>}
+        {description}
+      </p>
       {reserved ? (
         <PrimaryButton
           unactive

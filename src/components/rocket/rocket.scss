@@ -1,3 +1,5 @@
+@use '../../styles/colors';
+
 .rocket {
   display: grid;
   grid-template-columns: 15rem 1fr;
@@ -7,5 +9,19 @@
 
   &__image {
     grid-row: 1 / span 3;
+  }
+
+  &__description {
+    line-height: 1.5;
+  }
+
+  &__badge {
+    margin-right: 0.5rem;
+    padding: 0.1em 0.2em;
+    color: #fff;
+    background-color: colors.$color-cyan;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-weight: 700;
   }
 }
