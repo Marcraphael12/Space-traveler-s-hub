@@ -19,7 +19,7 @@ const Rockets = () => {
         {isLoading ? (
           <li>Loading...</li>
         ) : (
-          rockets.map((rocket) => <Rocket rocket={rocket} />)
+          rockets.map((rocket) => <Rocket key={rocket.id} rocket={rocket} />)
         )}
       </ul>
     </section>
