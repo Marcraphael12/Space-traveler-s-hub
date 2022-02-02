@@ -98,3 +98,19 @@ td span {
 .pb-5:nth-child(even) {
   background: rgb(253, 253, 253);
 }
+
+.missions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  &__missions {
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+
+  &__mission {
+    padding: 1rem;
+    border-bottom: 1px solid gray;
+  }
+}
