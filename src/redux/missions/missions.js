@@ -7,13 +7,15 @@ export const fetchMission = (payload) => ({
   payload,
 });
 
+const url = 'https://api.spacexdata.com/v3/missions';
+
 export const missionFromApi = () => async (dispatch) => {
-  const request = await fetch('https://api.spacexdata.com/v3/missions');
+  const request = await fetch(url);
   const response = await request.json();
   dispatch(fetchMission(response));
 };
 
-export const reducer = (state = initialState, action) => {
+const reducer = (state = initialState, action) => {
   switch (action.type) {
     case 'FETCH_MISSIONS':
       return {
@@ -39,7 +41,13 @@ export const reducer = (state = initialState, action) => {
     }
 
     default:
-      return state;
+      const newState = state.missions.map((mission) => {
+        if (mission.mission_id === action.payload) {
+          return { ...mission, joined: true };
+        }
+        return mission;
+      });
+      return { missions: newState };
   }
 };
 
