@@ -52,17 +52,17 @@ To start a local server on port 3000 run:
 
 ## Authors
 
-👤 **Marc**
-
-- GitHub: [@anuarshaidenov](https://github.com/anuarshaidenov)
-- Twitter: [@anuarnyi](https://twitter.com/anuarnyi)
-- LinkedIn: [anuarshaidenov](https://linkedin.com/in/anuarshaidenov)
-
 👤 **Marc Raphael**
 
 - GitHub: [@Marcraphael12](https://github.com/Marcraphael12)
 - Twitter: [@MarcRaphael](https://twiter.com/@MarcRaphael20)
 - LinkedIn: [EssogoRaphael](https://www.linkedin.com/in/EssogoRaphael/)
+
+👤 **Anuar Shaidenov**
+
+- GitHub: [@anuarshaidenov](https://github.com/anuarshaidenov)
+- Twitter: [@anuarnyi](https://twitter.com/anuarnyi)
+- LinkedIn: [anuarshaidenov](https://linkedin.com/in/anuarshaidenov)
 
 ## 🤝 Contributing
 
