@@ -1,3 +1,5 @@
+@use './colors';
+
 .container {
   width: 95%;
   max-width: 1200px;
@@ -12,4 +14,8 @@ button {
   background-color: transparent;
   font-family: inherit;
   cursor: pointer;
+}
+
+.text-disabled {
+  color: colors.$color-gray;
 }

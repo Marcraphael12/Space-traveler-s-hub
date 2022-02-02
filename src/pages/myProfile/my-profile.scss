@@ -3,7 +3,8 @@
   display: flex;
   justify-content: space-between;
 
-  .rockets-list {
-    width: 40%;
+  .rockets-list,
+  .missions-list {
+    width: 48%;
   }
 }
