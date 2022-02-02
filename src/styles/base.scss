@@ -1,5 +1,3 @@
-@use './colors';
-
 .container {
   width: 95%;
   max-width: 1200px;
@@ -17,5 +15,5 @@ button {
 }
 
 .text-disabled {
-  color: colors.$color-gray;
+  color: gray;
 }

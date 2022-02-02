@@ -2,10 +2,7 @@ import { useSelector } from 'react-redux';
 import './rockets-list.scss';
 
 const RocketsList = () => {
-  const rockets = useSelector((state) =>
-    state.rocketsReducer.rockets.filter((rocket) => rocket.reserved)
-  );
-
+  const rockets = useSelector((state) => state.rocketsReducer.rockets.filter((rocket) => rocket.reserved), );
   return (
     <div className="rockets-list">
       <h2>My rockets</h2>
@@ -16,7 +13,7 @@ const RocketsList = () => {
           </li>
         )}
         {rockets.map((rocket) => (
-          <li className="rockets-list__rocket">{rocket.rocket_name}</li>
+          <li key={rocket.id} className="rockets-list__rocket">{rocket.rocket_name}</li>
         ))}
       </ul>
     </div>
