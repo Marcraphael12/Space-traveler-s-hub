@@ -13,9 +13,5 @@
   &__rocket {
     padding: 1rem;
     border-bottom: 1px solid colors.$color-gray;
-
-    &:last-of-type {
-      border-bottom: none;
-    }
   }
 }
