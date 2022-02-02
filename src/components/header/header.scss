@@ -1,13 +1,9 @@
-@use '../../styles/colors';
-
-$color-blue-dark: darken(colors.$color-blue, 10%);
-
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 2rem 0;
-  border-bottom: 1px solid colors.$color-gray;
+  border-bottom: 1px solid gray;
 
   &__logo {
     display: flex;
@@ -37,15 +33,15 @@ $color-blue-dark: darken(colors.$color-blue, 10%);
   }
 
   &__nav-link {
-    color: colors.$color-blue;
+    color: #07f;
 
     &:hover {
-      color: $color-blue-dark;
+      color: #07f;
     }
 
     &.active {
       text-decoration: underline;
-      color: $color-blue-dark;
+      color: #07f;
     }
   }
 }

@@ -5,30 +5,37 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 a {
   text-decoration: none;
 }
+
 .active {
   text-decoration: underline;
 }
+
 .header {
   display: flex;
   flex-direction: row;
 }
+
 .logo {
   width: 100px;
   height: 100px;
   padding: 10px;
   margin-left: 100px;
 }
+
 .logo-text {
   display: flex;
   flex-direction: row;
 }
+
 .logo-text h1 {
   padding: 40px;
   margin-left: 0;
 }
+
 .navItems {
   display: flex;
   gap: 40px;
@@ -36,19 +43,24 @@ a {
   padding-top: 40px;
   font-size: large;
 }
+
 .nav-item {
   color: #20b2aa;
 }
+
 .table-container {
   margin: 0 30px;
   overflow-x: auto;
 }
+
 table {
   width: 100%;
 }
+
 thead {
   font-size: large;
 }
+
 table,
 th,
 td {
