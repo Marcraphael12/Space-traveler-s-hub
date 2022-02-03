@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render the missions list in profile page Renders  1`] = `
+<div
+  className="missions-list"
+>
+  <h2>
+    Joined missions
+  </h2>
+  <ul
+    className="missions-list__missions"
+  >
+    <li
+      className="missions-list__mission text-disabled"
+    >
+      No mission reserved...
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Render the missions list in profile page Renders all joined missions 1`] = `
+<div
+  className="missions-list"
+>
+  <h2>
+    Joined missions
+  </h2>
+  <ul
+    className="missions-list__missions"
+  >
+    <li
+      className="missions-list__mission text-disabled"
+    >
+      No mission reserved...
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Render the missions list in profile page Renders all joined missions correctly into the missi 1`] = `
+<div
+  className="missions-list"
+>
+  <h2>
+    Joined missions
+  </h2>
+  <ul
+    className="missions-list__missions"
+  >
+    <li
+      className="missions-list__mission text-disabled"
+    >
+      No mission reserved...
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Render the missions list in profile page Renders all joined missions correctly into the profile page 1`] = `
+<div
+  className="missions-list"
+>
+  <h2>
+    Joined missions
+  </h2>
+  <ul
+    className="missions-list__missions"
+  >
+    <li
+      className="missions-list__mission text-disabled"
+    >
+      No mission reserved...
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Render the missions list in profile page Renders the missions list in profile page correctly 1`] = `
+<div
+  className="missions-list"
+>
+  <h2>
+    Joined missions
+  </h2>
+  <ul
+    className="missions-list__missions"
+  >
+    <li
+      className="missions-list__mission text-disabled"
+    >
+      No mission reserved...
+    </li>
+  </ul>
+</div>
+`;
