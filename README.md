@@ -1,68 +1,56 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Space Travelers' Hub
+# Project Name
 
-> This is a web app for a company that provides commercial and scientific space travel services. It is working with the real life data from the SpaceX API. It will allow users to book rockets and join selected space missions.
+> Description the project.
 
-<div>
-<img alt="main screenshot" src='./screenshot-1.png' width=70%/>
-</div>
-<div>
-<img alt="my profile page" src='./screenshot-2.png' width=70%/>
-</div>
 
 ## Built With
 
-- ReactJS
+- Major languages
+- Frameworks
+- Technologies used
 
-## Technologies used
+## Live Demo (if available)
 
-- Redux
-- React Router
-- Sass
+[Live Demo Link](https://livedemo.com)
 
-## Live Demo
-
-[Live Demo Link](https://spacetravelerhub.netlify.app/)
 
 ## Getting Started
+
+**This is an example of how you may give instructions on setting up your project locally.**
+**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-To run the project on your local machine you need to have:
-
-- bash cli.
-- npm.
-
 ### Setup
 
-Go to the terminal and type:
-
-- `git clone https://github.com/Marcraphael12/Space-traveler-s-hub.git [YOUR_PROJECT_NAME]`
-- `cd [YOUR_PROJECT_NAME]`
-- `npm install`
+### Install
 
 ### Usage
 
-To start a local server on port 3000 run:
+### Run tests
 
-- `npm start`
+### Deployment
+
+
 
 ## Authors
 
-👤 **Marc Raphael**
+👤 **Author1**
 
-- GitHub: [@Marcraphael12](https://github.com/Marcraphael12)
-- Twitter: [@MarcRaphael](https://twiter.com/@MarcRaphael20)
-- LinkedIn: [EssogoRaphael](https://www.linkedin.com/in/EssogoRaphael/)
+- GitHub: [@githubhandle](https://github.com/githubhandle)
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
-👤 **Anuar Shaidenov**
+👤 **Author2**
 
-- GitHub: [@anuarshaidenov](https://github.com/anuarshaidenov)
-- Twitter: [@anuarnyi](https://twitter.com/anuarnyi)
-- LinkedIn: [anuarshaidenov](https://linkedin.com/in/anuarshaidenov)
+- GitHub: [@githubhandle](https://github.com/githubhandle)
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
@@ -73,6 +61,12 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
 
 ## 📝 License
 
