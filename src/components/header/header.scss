@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+  border-bottom: 1px solid gray;
+
+  &__logo {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  &__logo-img {
+    width: 4rem;
+  }
+
+  &__logo-title {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  &__nav-items {
+    display: flex;
+  }
+
+  &__nav-item {
+    padding: 0 1rem;
+
+    &--br {
+      border-right: 1px solid #000;
+    }
+  }
+
+  &__nav-link {
+    color: #07f;
+
+    &:hover {
+      color: #07f;
+    }
+
+    &.active {
+      text-decoration: underline;
+      color: #07f;
+    }
+  }
+}

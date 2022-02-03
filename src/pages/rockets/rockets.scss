@@ -1,0 +1,9 @@
+.rockets {
+  padding: 3rem 0;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

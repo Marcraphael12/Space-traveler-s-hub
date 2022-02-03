@@ -1,0 +1,337 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` Renders correctly every missions from the API 1`] = `
+<div
+  className="container"
+>
+  <table
+    className="table table-bordered table-striped"
+  >
+    <thead>
+      <tr>
+        <th
+          scope="col"
+          style={
+            Object {
+              "width": "10%",
+            }
+          }
+        >
+          Mission
+        </th>
+        <th
+          scope="col"
+          style={
+            Object {
+              "width": "60%",
+            }
+          }
+        >
+          Description 
+        </th>
+        <th
+          scope="col"
+          style={
+            Object {
+              "width": "15%",
+            }
+          }
+        >
+          Status
+        </th>
+        <th
+          scope="col"
+          style={
+            Object {
+              "width": "15%",
+            }
+          }
+        >
+          Join
+        </th>
+      </tr>
+    </thead>
+    <tbody />
+  </table>
+</div>
+`;
+
+exports[`Display the missi Renders correctly every missions from the API 1`] = `
+<div
+  className="container"
+>
+  <table
+    className="table table-bordered table-striped"
+  >
+    <thead>
+      <tr>
+        <th
+          scope="col"
+          style={
+            Object {
+              "width": "10%",
+            }
+          }
+        >
+          Mission
+        </th>
+        <th
+          scope="col"
+          style={
+            Object {
+              "width": "60%",
+            }
+          }
+        >
+          Description 
+        </th>
+        <th
+          scope="col"
+          style={
+            Object {
+              "width": "15%",
+            }
+          }
+        >
+          Status
+        </th>
+        <th
+          scope="col"
+          style={
+            Object {
+              "width": "15%",
+            }
+          }
+        >
+          Join
+        </th>
+      </tr>
+    </thead>
+    <tbody />
+  </table>
+</div>
+`;
+
+exports[`Display the missions list Renders correctly every missions from the API 1`] = `
+<div
+  className="container"
+>
+  <table
+    className="table table-bordered table-striped"
+  >
+    <thead>
+      <tr>
+        <th
+          scope="col"
+          style={
+            Object {
+              "width": "10%",
+            }
+          }
+        >
+          Mission
+        </th>
+        <th
+          scope="col"
+          style={
+            Object {
+              "width": "60%",
+            }
+          }
+        >
+          Description 
+        </th>
+        <th
+          scope="col"
+          style={
+            Object {
+              "width": "15%",
+            }
+          }
+        >
+          Status
+        </th>
+        <th
+          scope="col"
+          style={
+            Object {
+              "width": "15%",
+            }
+          }
+        >
+          Join
+        </th>
+      </tr>
+    </thead>
+    <tbody />
+  </table>
+</div>
+`;
+
+exports[`Render the missions lists Renders correctly every missions from the  1`] = `
+<div
+  className="container"
+>
+  <table
+    className="table table-bordered table-striped"
+  >
+    <thead>
+      <tr>
+        <th
+          scope="col"
+          style={
+            Object {
+              "width": "10%",
+            }
+          }
+        >
+          Mission
+        </th>
+        <th
+          scope="col"
+          style={
+            Object {
+              "width": "60%",
+            }
+          }
+        >
+          Description 
+        </th>
+        <th
+          scope="col"
+          style={
+            Object {
+              "width": "15%",
+            }
+          }
+        >
+          Status
+        </th>
+        <th
+          scope="col"
+          style={
+            Object {
+              "width": "15%",
+            }
+          }
+        >
+          Join
+        </th>
+      </tr>
+    </thead>
+    <tbody />
+  </table>
+</div>
+`;
+
+exports[`Render the missions lists Renders the missions correctly 1`] = `
+<div
+  className="container"
+>
+  <table
+    className="table table-bordered table-striped"
+  >
+    <thead>
+      <tr>
+        <th
+          scope="col"
+          style={
+            Object {
+              "width": "10%",
+            }
+          }
+        >
+          Mission
+        </th>
+        <th
+          scope="col"
+          style={
+            Object {
+              "width": "60%",
+            }
+          }
+        >
+          Description 
+        </th>
+        <th
+          scope="col"
+          style={
+            Object {
+              "width": "15%",
+            }
+          }
+        >
+          Status
+        </th>
+        <th
+          scope="col"
+          style={
+            Object {
+              "width": "15%",
+            }
+          }
+        >
+          Join
+        </th>
+      </tr>
+    </thead>
+    <tbody />
+  </table>
+</div>
+`;
+
+exports[`Render the missions lists Renders y 1`] = `
+<div
+  className="container"
+>
+  <table
+    className="table table-bordered table-striped"
+  >
+    <thead>
+      <tr>
+        <th
+          scope="col"
+          style={
+            Object {
+              "width": "10%",
+            }
+          }
+        >
+          Mission
+        </th>
+        <th
+          scope="col"
+          style={
+            Object {
+              "width": "60%",
+            }
+          }
+        >
+          Description 
+        </th>
+        <th
+          scope="col"
+          style={
+            Object {
+              "width": "15%",
+            }
+          }
+        >
+          Status
+        </th>
+        <th
+          scope="col"
+          style={
+            Object {
+              "width": "15%",
+            }
+          }
+        >
+          Join
+        </th>
+      </tr>
+    </thead>
+    <tbody />
+  </table>
+</div>
+`;
